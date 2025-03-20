@@ -25,24 +25,30 @@ export class Project{
   }
 
   addTask(){
+    const INDEX = this.taskList.length;
+    this.taskList.push(new Task(INDEX,"a","b",Date,"high"));
+    console.log(this.taskList);
   }
 
-  deleteTask(){
-
+  deleteTask(index){
+    if (this.taskList.length > 0){
+      this.taskList.splice(index,1);
+      console.log(this.taskList);
+    }
   }
 }
 
 export class Task{
-  constructor(title,desc,dueDate,priority,isChecked){
+  constructor(title,desc,dueDate,priority){
+    this.index=0;
     this.title=title;
     this.desc=desc;
     this.dueDate=dueDate;
     this.priority=priority;
-    this.isChecked=isChecked;
+    this.isChecked=false;
   }
 
   toggleCheck(){
-
   }
 
   editTask(){

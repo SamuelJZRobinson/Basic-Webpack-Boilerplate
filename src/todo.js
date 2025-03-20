@@ -26,7 +26,7 @@ export class Project{
 
   addTask(){
     const INDEX = this.taskList.length;
-    this.taskList.push(new Task(INDEX,"a","b",Date,"high"));
+    this.taskList.push(new Task(INDEX,"b",Date,"high"));
     console.log(this.taskList);
   }
 
@@ -39,9 +39,8 @@ export class Project{
 }
 
 export class Task{
-  constructor(index,title,desc,dueDate,priority){
+  constructor(index,desc,dueDate,priority){
     this.index=index;
-    this.title=title;
     this.desc=desc;
     this.dueDate=dueDate;
     this.priority=priority;

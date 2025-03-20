@@ -11,6 +11,7 @@
 - Create asset/resource
 - npm install --save-dev webpack-dev-server (local development server that provides live reloading)
 - npx webpack serve (run local development server)
+- npm install material-icons@latest
 
 # Components
 Command-line Tools:

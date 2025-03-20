@@ -49,6 +49,7 @@ export class Task{
   }
 
   toggleCheck(){
+    this.isChecked = !this.isChecked;
   }
 
   editTask(){

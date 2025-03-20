@@ -39,8 +39,8 @@ export class Project{
 }
 
 export class Task{
-  constructor(title,desc,dueDate,priority){
-    this.index=0;
+  constructor(index,title,desc,dueDate,priority){
+    this.index=index;
     this.title=title;
     this.desc=desc;
     this.dueDate=dueDate;
